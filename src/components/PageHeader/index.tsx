@@ -19,12 +19,13 @@ const PageHeader: React.FunctionComponent<PageHeaderProps> = (props) => {
         </Link>
         <img src={logoImg} alt="Proffy"/>
       </div>
-      
+
       <div className="header-content">
         <strong>
           {props.title}
         </strong>
-      </div>
+        {props.children}
+      </div>      
     </header>
   )
 }
