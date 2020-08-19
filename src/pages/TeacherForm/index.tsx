@@ -36,10 +36,11 @@ function TeacherForm() {
               Importante! <br/>
               Preencha todos os dados
             </p>
+            <button type="button">
+              Salvar Cadastro
+            </button>
           </footer>
-          <button type="button">
-            Salvar Cadastro
-          </button>
+          
         </main>
     </div>
   )
