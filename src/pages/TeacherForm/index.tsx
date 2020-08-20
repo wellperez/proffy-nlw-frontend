@@ -47,9 +47,34 @@ function TeacherForm() {
                 { value: "Química", label:"Química" },
               ]}  
             ></Select>
-            <Input name="cost" label="Custo da sua hora por aula"></Input>
-            
+            <Input name="cost" label="Custo da sua hora por aula"></Input>            
           </fieldset>
+
+          <fieldset>
+            <legend>
+              Horários Disponíveis
+              <button type="button">+ Novo Horário</button>
+            </legend>   
+            <div className="schedule-item">
+              <Select
+                name="week_day"
+                label="Dia da Semana"
+                options={[
+                  { value: "0", label:"Domingo" },
+                  { value: "1", label:"Segunda-feira" },
+                  { value: "2", label:"Terça-feira" },
+                  { value: "3", label:"Quarta-feira" },
+                  { value: "4", label:"Quinta-feira" },
+                  { value: "5", label:"Sexta-feira" },
+                  { value: "6", label:"Sábado" },
+              ]}/>
+                <Input name="from" label="Das" type="time"></Input>
+                <Input name="to" label="Até" type="time"></Input>
+              </div>         
+          </fieldset>
+
+          
+
           <footer>
             <p><img src={warningIcon} alt="Aviso Importante"/>
               Importante! <br/>
