@@ -45,6 +45,7 @@
   font: 700 1.6rem Archivo;
   cursor: pointer;
   transition: color 0.2s;
+  text-decoration: none;
 }
 
 #page-teacher-form main fieldset legend button:hover {
